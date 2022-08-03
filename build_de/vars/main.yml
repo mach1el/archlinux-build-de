@@ -67,7 +67,6 @@ pc_core_packages:
   - gparted
   - dconf-editor
   - python-pip
-  - python2-pip
   - file-roller
   - unzip
   - unrar
