@@ -3,6 +3,7 @@
   pacman:
     name:  "{{ font_packages }}"
     state: present
+    update_cache: yes
 
 - name: FONTS | Remove fonts if available
   file:
