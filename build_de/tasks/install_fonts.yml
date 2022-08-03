@@ -6,7 +6,7 @@
 
 - name: FONTS | Remove fonts if available
   file:
-    path: "/usr/share/fonts"
+    path: "/usr/share/fonts/Fonts"
     state: absent
 
 - name: FONTS | Clone custom fonts repo.
