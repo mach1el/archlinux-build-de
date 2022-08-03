@@ -3,3 +3,4 @@
   pacman:
     name:  "{{ pc_core_packages }}"
     state: present
+    update_cache: yes
