@@ -4,7 +4,7 @@
 - include_tasks: add_user.yml
 - include_tasks: modify_mkinitcpio.yml
 - include_tasks: install_grub.yml
-- include_task: modify_pacman_conf.yml
+- include_tasks: modify_pacman_conf.yml
 - include_tasks: install_fonts.yml
 
 - include_tasks: install_pc_packages.yml
