@@ -74,6 +74,7 @@ pc_core_packages:
   - pulseaudio
   - pulseaudio-alsa
   - pulseaudio-equalizer
+  - pulseaudio-bluetooth
   - transmission-qt
   - mlocate
   - cmake
