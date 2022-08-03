@@ -3,5 +3,8 @@
   timezone:
     name: "{{ system_timezone }}"
 
+- name: Save timezone file
+  command: ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime;
+
 - name: hwclock with timzone
   command: hwclock --systz --localtime
