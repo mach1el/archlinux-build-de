@@ -1,0 +1,9 @@
+- name: PACKAGES | install plasma DE
+  pacman:
+    name: "{{ item }}"
+  with_items:
+    - sddm
+    - plasma
+    - plasma-meta
+    - kde-applications
+    - kde-applications-meta

@@ -1,0 +1,10 @@
+---
+- name: Archlinux | clone yay repo.
+  command: git clone {{ yay_repo }}
+  args:
+    chdir: "/tmp"
+
+- name: Archlinux | Install yay.
+  command: makepkg -sci --noconfirm
+  args:
+    chdir: "{{ yay_work_dir }}"

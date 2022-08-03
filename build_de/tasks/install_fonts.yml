@@ -1,0 +1,13 @@
+---
+- name: FONTS | Install fonts
+  pacman:
+    name:  "{{ font_packages }}"
+    state: present
+
+- name: FONTS | Clone custom fonts repo.
+  command: git clone {{ fonts_repo }}
+  args:
+    chdir:  "/usr/share/fonts"
+
+- name: FONTS | Update fonts cache.
+  command: fc-cache -fv

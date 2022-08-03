@@ -1,0 +1,15 @@
+- include_tasks: set_hostname.yml
+- include_tasks: configure_timezone.yml
+- include_tasks: configure_lang.yml
+- include_tasks: add_user.yml
+- include_tasks: modify_mkinitcpio.yml
+- include_tasks: install_grub.yml
+- include_tasks: install_fonts.yml
+
+- include_tasks: install_pc_packages.yml
+  when: pc
+
+- include_tasks: install_plasma.yml
+  when: de == "plasma"
+
+- include_tasks: enable_services.yml

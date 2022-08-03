@@ -1,0 +1,91 @@
+hostname: "R34per"
+username: "michael"
+system_timezone: "Asia/Ho_Chi_Minh"
+system_locale: "en_US.UTF-8"
+fonts_repo: "https://github.com/mach1el/Fonts.git"
+
+font_packages:
+  - ttf-dejavu
+  - ttf-roboto
+  - ttf-anonymous-pro
+  - otf-hermit
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - noto-fonts-extra
+  - otf-fira-sans
+  - otf-fira-mono
+  - otf-font-awesome 
+  - powerline-fonts 
+  - powerline 
+  - powerline-fonts 
+  - python-powerline
+
+pc_core_packages:
+  - tree
+  - htop
+  - git
+  - curl
+  - wget
+  - zsh
+  - neofetch
+  - nodejs
+  - lolcat
+  - net-tools
+  - udisks2
+  - audacity
+  - ardour
+  - mpv
+  - parole
+  - qt5
+  - qt5ct
+  - qt5-base
+  - kdenlive
+  - gimp
+  - firefox
+  - chromium
+  - firefox-developer-edition
+  - openvpn
+  - bash-completion
+  - ntfs-3g
+  - docker
+  - docker-compose
+  - steam
+  - steam-native-runtime
+  - x265
+  - x264
+  - xorg
+  - xorg-xinit
+  - xorg-apps
+  - xorg-server
+  - mesa
+  - lib32-mesa
+  - xf86-input-synaptics
+  - xf86-input-libinput
+  - libinput
+  - gparted
+  - dconf-editor
+  - python-pip
+  - python2-pip
+  - file-roller
+  - unzip
+  - unrar
+  - pavucontrol
+  - pulseaudio
+  - pulseaudio-alsa
+  - pulseaudio-equalizer
+  - transmission-qt
+  - mlocate
+  - cmake
+  - ibus-unikey
+  - xdg-user-dirs
+  - xterm
+  - powerline
+  - libreoffice-fresh
+  - alsa-plugins
+  - alsa-utils
+  - alsa-tools
+  - gst-libav
+  - gst-plugins-good
+  - gst-plugins-ugly
+  - gst-plugins-bad

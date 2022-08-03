@@ -1,0 +1,16 @@
+---
+- name: Add user
+  user:
+    name: "{{ username }}"
+    state: present
+    shell: /bin/bash
+    groups: root,users,wheel,power,storage
+
+- name: Modify sudoers
+  lineinfile:
+    path: /etc/sudoers
+    line: "{{ item }}"
+    validate: 'visudo -cf %s'
+  with_items:
+    - "{{ username }} ALL=(ALL:ALL) ALL"
+    - "{{ username }} ALL=(ALL:ALL) NOPASSWD: ALL"

@@ -1,0 +1,7 @@
+---
+- name: Set system timezone
+  timezone:
+    name: "{{ system_timezone }}"
+
+- name: hwclock with timzone
+  command: hwclock --systz --localtime

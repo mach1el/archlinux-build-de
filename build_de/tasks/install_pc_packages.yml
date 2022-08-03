@@ -1,0 +1,5 @@
+---
+- name: PC | Install packages
+  pacman:
+    name:  "{{ pc_core_packages }}"
+    state: present

@@ -1,0 +1,8 @@
+---
+
+- name: SERVICES | Enable NetworkManager
+  service: name=NetworkManager state=started enable=true
+
+- name: SERVICES | Enable sddm
+  service: name=sddm state=started enable=true
+  when: de == "plasma"

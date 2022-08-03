@@ -1,0 +1,6 @@
+- name: Playing roles
+  become: true
+  gather_facts: true
+  hosts: "{{ hosts | default('localhost') }}"
+  roles: 
+    - 'build_de'
