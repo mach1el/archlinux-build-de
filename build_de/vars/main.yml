@@ -85,7 +85,6 @@ pc_core_packages:
   - libreoffice-fresh
   - alsa-plugins
   - alsa-utils
-  - alsa-tools
   - gst-libav
   - gst-plugins-good
   - gst-plugins-ugly
