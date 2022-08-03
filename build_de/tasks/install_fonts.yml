@@ -4,6 +4,11 @@
     name:  "{{ font_packages }}"
     state: present
 
+- name: FONTS | Remove fonts if available
+  file:
+    path: "/usr/share/fonts"
+    state: absent
+
 - name: FONTS | Clone custom fonts repo.
   command: git clone {{ fonts_repo }}
   args:
