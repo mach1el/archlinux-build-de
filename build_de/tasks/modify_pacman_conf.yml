@@ -1,8 +1,7 @@
 - name: Modify pacman.conf
-  lineinfile:
-    insertafter: '# enable the multilib repositories are required here.'
+  blockinfile:
     path: /etc/pacman.conf
-    line: "{{ item }}"
-  with_items:
-    - "[multilib]"
-    - "Include = /etc/pacman.d/mirrorlist"
+    insertafter: "# enable the multilib repositories are required here."
+    block: |
+       [multilib]
+       Include = /etc/pacman.d/mirrorlist
