@@ -2,3 +2,8 @@
 - name: Set a hostname
   hostname:
     name: "{{ hostname }}"
+
+- name: Put into hostname file
+  lineinfile:
+    path: /etc/hostname
+    line: "{{ hostname }}"
