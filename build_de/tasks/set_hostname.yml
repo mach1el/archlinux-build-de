@@ -3,6 +3,9 @@
   hostname:
     name: "{{ hostname }}"
 
+- name: Create file
+  command: touch /etc/hostname
+
 - name: Put into hostname file
   lineinfile:
     path: /etc/hostname
